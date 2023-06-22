@@ -16,5 +16,8 @@ exports.config = {
         "appium:appPackage": "com.woocommerce.android",
         "appium:appActivity": ".ui.main.MainActivity",
         "appium:appWaitActivity": "com.woocommerce.android.ui.login.LoginActivity"
-    }]  
+    }],
+    
+    waitForTimeout: 20000,
+    mochaOpts: {timeout: 300000}
 }
