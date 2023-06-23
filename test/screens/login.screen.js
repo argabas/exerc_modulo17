@@ -11,12 +11,15 @@ class LoginScreen {
 
     get #twoFactorPasswordBtn() {return $('id:login_enter_password')}
 
-    async setStoreAddress(url) {this.#StoreAddress.setValue(url)}
+    async setStoreAddress(url) {await this.#StoreAddress.setValue(url)}
 
     async continue() {await this.#continue.click()}
 
-    async continue() {await this.#continueWithStoreCredentials.click()}
-
+    async continuecred () {
+        await this.#continueWithStoreCredentials.waitForExist()
+        return await this.#continueWithStoreCredentials.click()
+    }   
+    
     async login(username, password) {
         await this.#username.setValue(username)
         await this.#password.setValue(password)
