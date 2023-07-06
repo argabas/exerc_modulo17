@@ -1,7 +1,7 @@
 {
-  "name": "aula-16e17",
+  "name": "exerc_modulo17",
   "version": "1.0.0",
-  "description": "Aulas 16 e 17",
+  "description": "exercicio do modulo 17",
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
